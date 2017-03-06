@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning JavaScript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+	
+</head>
+
+<body>
+    
+	<!--<button onclick="alert('Hi')">Click here!</button>-->
+	
+	<!--<p id="text">Some text</p>-->
+	
+	<!--<button id="stylesChanger">Change first div styles</button>-->
+	
+	<!--<input id="myInput" type="text" value="test"/>-->
+	
+	<p>Howmany fingers am I holding?</p>
+	<input id="answer" />
+	<button id="myButton">Submit</button>
+	
+	<script type="text/javascript">
+	
+	    document.getElementById("myButton").onclick=function() {
+		
+		    var x=Math.random();
+		
+		    x=x*6;
+		
+		    x=Math.floor(x);
+		
+		    if (x==document.getElementById("answer").value) {
+			
+			    alert("That's true!");
+			
+			} else {
+			
+			    alert("That's wrong! My number was " + x);
+			
+			}
+			
+		}
+		
+	</script>
+	
+</body>
+</html>
